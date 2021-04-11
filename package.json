@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc -b",
     "test": "npm run build",
+    "gen": "ts-node tools/generate-from-schema.ts spec/APIs/schemas src/schema",
     "prepublishOnly": "npm test"
   },
   "publishConfig": {
